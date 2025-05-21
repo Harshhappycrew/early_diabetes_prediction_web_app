@@ -7,7 +7,7 @@ def app(diabetes_df):
     # Set the title to the home page contents.
     st.header("Early Diabetes Prediction Web App")
     # Provide a brief description for the web app.
-    st.markdown('''<p style='color:red;font-size:20px'>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
+    st.markdown('''<p style='color:teal;font-size:20px'>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.
                 There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help in reducing the impact of diabetes.
                 This Web app will help you to predict whether a person has diabetes or is prone to get diabetes in future by analysing the values of several features using the Decision Tree Classifier.''', unsafe_allow_html = True)
 

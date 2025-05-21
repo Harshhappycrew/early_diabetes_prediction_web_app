@@ -66,7 +66,7 @@ def grid_tree_pred(diabetes_df, glucose, bp, insulin, bmi, pedigree, age):
 
 # Create the user defined 'app()' function.
 def app(diabetes_df):
-    st.markdown("<p style='color:red;font-size:25px'>This app uses <b>Decision Tree Classifier</b> for the Early Prediction of Diabetes.", unsafe_allow_html = True) 
+    st.markdown("<p style='color:slate;font-size:25px'>This app uses <b>Decision Tree Classifier</b> for the Early Prediction of Diabetes.", unsafe_allow_html = True) 
     st.subheader("Select Values:")
     
     # Create six sliders with the respective minimum and maximum values of features. 

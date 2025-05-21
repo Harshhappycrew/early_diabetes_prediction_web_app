@@ -12,10 +12,10 @@ def app(diabetes_df):
                 This Web app will help you to predict whether a person has diabetes or is prone to get diabetes in future by analysing the values of several features using the Decision Tree Classifier.''', unsafe_allow_html = True)
 
     # Add the 'beta_expander' to view full dataset 
-    with st.beta_expander("View Dataset"):
+    with st.expander("View Dataset"):
       st.table(diabetes_df)
     
-    beta_col1, beta_col2, beta_col3 = st.beta_columns(3)
+    beta_col1, beta_col2, beta_col3 = st.columns(3)
     # Add a checkbox in the first column. Display the column names of 'diabetes_df' on the click of checkbox.
     with beta_col1:
       if st.checkbox("Show all column names"):

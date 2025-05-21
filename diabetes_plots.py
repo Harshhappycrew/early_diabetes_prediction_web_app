@@ -98,7 +98,7 @@ def app(diabetes_df):
          
         if st.checkbox("Plot confusion matrix"):
             plt.figure(figsize = (5, 3))
-            plot_confusion_matrix(grid_tree, X_train, y_train, values_format = 'd')
+            ConfusionMartixDisplay(grid_tree, X_train, y_train, values_format = 'd')
             st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   

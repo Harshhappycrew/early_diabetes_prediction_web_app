@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier  
 from sklearn.model_selection import GridSearchCV  
 from sklearn import tree
-from sklearn.metrics import confusion_matrix, ConfusionMartixDisplay, classification_report
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, classification_report
 import graphviz as graphviz
 from sklearn.tree import export_graphviz
 from io import StringIO
@@ -58,7 +58,7 @@ def app(diabetes_df):
          
         if st.checkbox("Plot confusion matrix"):
             plt.figure(figsize = (10, 6))
-            ConfusionMartixDisplay(dtree_clf, X_train, y_train, values_format = 'd')
+            ConfusionMatrixDisplay(dtree_clf, X_train, y_train, values_format = 'd')
             st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   
@@ -98,7 +98,7 @@ def app(diabetes_df):
          
         if st.checkbox("Plot confusion matrix"):
             plt.figure(figsize = (5, 3))
-            ConfusionMartixDisplay(grid_tree, X_train, y_train, values_format = 'd')
+            ConfusionMatrixDisplay(grid_tree, X_train, y_train, values_format = 'd')
             st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   

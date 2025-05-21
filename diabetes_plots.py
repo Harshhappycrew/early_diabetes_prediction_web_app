@@ -59,7 +59,7 @@ def app(diabetes_df):
         if st.checkbox("Plot confusion matrix"):
             plt.figure(figsize = (10, 6))
             cm = confusion_matrix(y_train, y_train_pred)
-            ConfusionMtrixDisplay(confusion_matrix=cm).plot(values_format='d')
+            ConfusionMatrixDisplay(confusion_matrix=cm).plot(values_format='d')
             st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   
@@ -100,7 +100,7 @@ def app(diabetes_df):
         if st.checkbox("Plot confusion matrix"):
             plt.figure(figsize = (5, 3))
             cm = confusion_matrix(y_train, y_train_pred)
-            ConfusionMtrixDisplay(confusion_matrix=cm).plot(values_format='d')
+            ConfusionMatrixDisplay(confusion_matrix=cm).plot(values_format='d')
             st.pyplot()
 
         if st.checkbox("Plot Decision Tree"):   
